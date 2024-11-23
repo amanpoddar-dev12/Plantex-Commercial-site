@@ -1,1 +1,1 @@
-# Plantex-Commercial-site
+# Plantex-Commercial-site for commercial purpose
