@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantex</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header>
+    <a href="#" class="logo">Plantiex</a>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!--search-->
+    <div class="boxes">
+      <input type="text" placeholder="Search">
+      <a href="#">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+  </header>
+  <!--Home starting area-->
+<section class="home" id="home">
+  <div class="home-text">
+    <h1>Garden Plants</h1>
+    <h2>Plants The<br>Life Importance</h2>
+    <a href="#" class="btn">Today's Special</a>
+  </div>
+  <div class="home-plant">
+    <img src="IMG\pots.png">
+  </div>
+</section>
+<!--about section-->
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="IMG\about.png">
+  </div>
+  <div class="about-text">
+    <span>About Us</span>
+    <h2>At Plantex, we believe that every home should be a green oasis. </h2>
+    <p>Our curated selection of plants includes everything from vibrant houseplants to stunning outdoor specimens,
+       ensuring you find the perfect addition to your space.</p>
+       <a href="#" class="btn">Explore Now</a>
+  </div>
+</section>
+<!--menu-->
+<section class="menu" id="menu">
+  <div class="heading">
+    <span>Herbs Menu</span>
+    <h2>Herbs are nature’s flavorful treasures, perfect for enhancing your culinary creations and boosting your health. </h2>
+  </div>
+    <div class="menu-container">
+      <div class="box">
+        <div class="box-img">
+          <img src="IMG\adneium.png">
+          </div>
+          <h2>Grafted-Adenium</h2>
+          <h3>Unique and vibrant colors.</h3>
+          <span>₹59</span>
+          <i class='bx bxs-cart' ></i>
+      </div>
+      <div class="box">
+        <div class="box-img">
+          <img src="IMG\chinapalm.png">
+          </div>
+          <h2>Areca Palm</h2>
+          <h3>Treat anxiety problems </h3>
+          <span>₹158</span>
+          <i class='bx bxs-cart' ></i>
+      </div>
+      <div class="box">
+        <div class="box-img">
+          <img src="IMG\hibiscus.png">
+          </div>
+          <h2>Yellow Hibiscus</h2>
+          <h3>Treat anxiety problems </h3>
+          <span>₹199</span>
+          <i class='bx bxs-cart' ></i>
+      </div>
+      <div class="box">
+        <div class="box-img">
+          <img src="IMG\rose.png">
+          </div>
+          <h2>China Rose</h2>
+          <h3>Treat anxiety problems </h3>
+          <span>₹399</span>
+          <i class='bx bxs-cart' ></i>
+      </div>
+  </div>
+</section>
+<!--our services-->
+<section class="services" id="services">
+  <div class="heading">
+   <h1>Our <span>Feature</span></h1>
+    <h2>Selling Different Varients Plants</h2>
+    <p>Fragrant indoor plants can transform any living space into an aromatic sanctuary</p>
+  </div>
+  <div class="service-container">
+    <div class="s-box">
+      <img src="IMG\order.png">
+      <h3>Order</h3>
+      <p>Thanks for purchasing our product on Plantex , We wish you will satisfy with our work. Stay Connected ! </p>
+    </div>
+    <div class="s-box">
+      <img src="IMG\shipping.png">
+      <h3>Shipping</h3>
+      <p>All items are carefully packaged to ensure they arrive in perfect condition.</p>
+    </div>
+    <div class="s-box">
+      <img src="IMG\Delivery.png">
+      <h3>Delivery</h3>
+      <p>Thank you for your order! We are excited to inform you that your product will delivered with in given time period </p>
+    </div>
+  </div>
+</section>
+<section id="contact form">
+   <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contact-form" onsubmit="submitForm(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="response-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</section>
+<section id="contact">
+  <div class="footer">
+    <div class="main">
+      <div class="col">
+        <h4>Mine Work</h4>
+        <ul>
+          <li><a href="#">Personal Portfolio</a></li>
+          <li><a href="#">Milk App UI</a></li>
+          <li><a href="#">Crypto X</a></li>
+          <li><a href="#">Plantex</a></li>
+          <li><a href="#">Music App</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">UI/UX Creation</a></li>
+          <li><a href="#">Graphic Designing</a></li>
+          <li><a href="#">Product Management</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Delivery Information</a></li>
+          <li><a href="#">Privacy & Policy</a></li>
+          <li><a href="#">Tream And Condition</a></li>
+          <li><a href="#">Customer Support</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Contact Us</h4>
+        <div class="social"></div>
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-linkedin' ></i></a>
+          <a href="#"><i class='bx bxl-github'></i></a>
+          <a href="#"><i class='bx bxl-instagram' ></i></a>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
