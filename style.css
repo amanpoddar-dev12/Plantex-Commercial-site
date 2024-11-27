@@ -11,7 +11,7 @@
 :root{
     --main-color: #ff702a;
     --text-color: #000000;
-    background: linear-gradient(90deg, #c1fee6, #8cc9ef);
+    background: linear-gradient(#c1fee6, #8cc9ef);
     --big-font: 5rem;
     --h2-font: 2.25rem;
     --p-font: 0.9rem;
@@ -368,7 +368,6 @@ button:hover {
         width: 100%;
     }
 }
-
 
 .footer{
     padding: 10px 0;
